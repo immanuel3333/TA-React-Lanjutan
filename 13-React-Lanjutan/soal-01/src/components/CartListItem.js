@@ -23,7 +23,7 @@ const CartListItem = ({ name, price, amount, increase, decrease }) => {
   );
 };
 
-CartListItem: propTypes = {
+CartListItem.propTypes = {
   name: PropTypes.string,
   price: PropTypes.number,
   amount: PropTypes.number,
@@ -31,13 +31,13 @@ CartListItem: propTypes = {
   decrease: PropTypes.func,
 };
 
-CartListItem: defaultProps = {
+CartListItem.defaultProps = {
   increase: function () {
     console.log("");
   },
 };
 
-CartListItem: defaultProps = {
+CartListItem.defaultProps = {
   decrease: function () {
     console.log("");
   },
